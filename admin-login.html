@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Admin | RHS Electric</title>
+    <meta name="description" content="Login do painel administrativo RHS Electric." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+
+    <style>
+      .admin-login-page {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 16px;
+      }
+      .admin-login-card {
+        width: min(460px, 100%);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 34px;
+        background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+        box-shadow: var(--shadow);
+      }
+      .admin-login-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 28px;
+      }
+      .admin-login-card h1 {
+        margin: 0 0 8px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .admin-login-card p {
+        margin: 0 0 24px;
+        text-align: center;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .admin-login-form {
+        display: grid;
+        gap: 14px;
+      }
+      .admin-login-error {
+        display: none;
+        padding: 12px 14px;
+        border: 1px solid rgba(215,25,32,.35);
+        background: rgba(215,25,32,.12);
+        color: #ffd7d7;
+        border-radius: 14px;
+        font-weight: 700;
+      }
+      .admin-login-back {
+        margin-top: 18px;
+        display: block;
+        text-align: center;
+        color: var(--muted);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="admin-login-page">
+      <section class="admin-login-card">
+        <a class="admin-login-logo" href="index.html" aria-label="RHS Electric Home">
+          <img src="logo.png" alt="RHS Electric" width="200" />
+        </a>
+
+        <h1>Painel Admin</h1>
+        <p>Entre com seu acesso para cadastrar, editar e organizar os produtos da RHS Electric.</p>
+
+        <div class="admin-login-error" data-login-error></div>
+
+        <form class="admin-login-form" data-login-form>
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="admin@seudominio.com" autocomplete="email" required />
+          </label>
+
+          <label>
+            <span>Senha</span>
+            <input type="password" name="senha" placeholder="Sua senha" autocomplete="current-password" required />
+          </label>
+
+          <button class="admin-submit-btn" type="submit" data-login-submit>
+            Entrar no painel
+          </button>
+        </form>
+
+        <a class="admin-login-back" href="index.html">← Voltar ao site</a>
+      </section>
+    </main>
+
+    <script src="assets/js/admin-login.js?v=rhs-db-final-20260520"></script>
+  </body>
+</html>

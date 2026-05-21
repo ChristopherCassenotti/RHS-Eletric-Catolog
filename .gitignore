@@ -1,0 +1,25 @@
+# Configurações sensíveis
+api/config/env.php
+.env
+.env.*
+
+# Banco real / backups
+*.sql
+!database/schema.sql
+*.zip
+*.rar
+*.7z
+backup/
+backups/
+
+# Logs e cache
+*.log
+logs/
+cache/
+tmp/
+
+# Sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

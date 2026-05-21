@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Categoria | RHS Electric</title>
+    <meta name="description" content="Produtos por categoria RHS Electric." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="RHS Electric Home">
+          <img src="logo.png" alt="" width="200px" />
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="produtos.html" class="active">Produtos</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="assistencia.html">Assistência</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            class="top-whatsapp-btn"
+            href="https://wa.me/5542999999999"
+            target="_blank"
+            style="display: flex; gap: 5px"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+          <button
+            class="icon-btn mobile-toggle"
+            data-mobile-toggle
+            aria-label="Abrir menu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="category-page">
+      <section class="category-hero">
+        <div class="container">
+          <div class="products-breadcrumb">
+            <a href="index.html">Início</a>
+            <span>/</span>
+            <a href="produtos.html">Produtos</a>
+            <span>/</span>
+            <strong data-category-breadcrumb>Categoria</strong>
+          </div>
+
+          <div class="category-hero-content">
+            <div>
+              <span class="category-kicker">CATEGORIA</span>
+
+              <h1>
+                <span data-category-title>Categoria</span>
+                <strong>elétrica</strong>
+              </h1>
+
+              <p data-category-description>
+                Veja os modelos disponíveis nessa categoria e escolha o produto
+                ideal para sua rotina.
+              </p>
+            </div>
+
+            <a class="category-back-btn" href="produtos.html">
+              <i class="fas fa-arrow-left"></i>
+              Ver todos os produtos
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-list-section">
+        <div class="container">
+          <div class="category-filterbar">
+            <div class="category-info">
+              <span data-products-count>0 produtos</span>
+              <p>Modelos encontrados nessa categoria</p>
+            </div>
+
+            <div class="category-actions">
+              <a href="produtos.html" class="category-outline-btn">
+                Todos os modelos
+              </a>
+
+              <select data-order>
+                <option value="featured">Destaque</option>
+                <option value="price-asc">Menor preço</option>
+                <option value="price-desc">Maior preço</option>
+                <option value="name">Nome A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid-page" data-products-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="logo.png" alt="" width="200px" />
+          </a>
+          <p>
+            Mobilidade elétrica com tecnologia, economia e atendimento
+            especializado.
+          </p>
+        </div>
+
+        <div>
+          <h4>Loja</h4>
+          <a href="produtos.html">Produtos</a>
+          <a href="categoria.html?cat=scooters">Scooters</a>
+          <a href="categoria.html?cat=e-bikes">E-bikes</a>
+          <a href="categoria.html?cat=triciclos">Triciclos</a>
+          <a href="categoria.html?cat=patinetes">Patinetes</a>
+        </div>
+
+        <div>
+          <h4>Suporte</h4>
+          <a href="assistencia.html">Assistência técnica</a>
+          <a href="faq.html">Perguntas frequentes</a>
+          <a href="contato.html">Fale conosco</a>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <p>WhatsApp: (00) 00000-0000</p>
+          <p>Atendimento: Seg. a Sex. das 8h às 18h</p>
+          <p>© <span data-year></span> RHS Electric</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" aria-live="polite"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+  </body>
+</html>
